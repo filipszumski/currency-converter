@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script defer src="js/script.js"></script>
+    <title>Kantor Online</title>
+</head>
+
+<body class="body">
+    <h1 class="header">Kantor Online</h1>
+    <div class="form__container">
+        <form class="form js-form" action="" method="GET">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Wymiana walut</legend>
+
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__labelText">Wymieniasz z (wybierz walutę):</span>
+                        <select class="form__input js-possessedCurrency">
+                            <option name="currency" value="pln">PLN</option>
+                            <option name="currency" value="eur">EUR</option>
+                            <option name="currency" value="usd">USD</option>
+                            <option name="currency" value="gbp">GBP</option>
+                            <option name="currency" value="chf">CHF</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__labelText">Kwota:</span>
+                        <input type="number" name="amount" step="0.01" placeholder="Wpisz kwotę"
+                            class="js-moneyAmount form__input" min="0">
+                    </label>
+                </p>
+
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__labelText">Wymieniasz na (wybierz walutę):</span>
+                        <select class="form__input js-wantedCurrency">
+                            <option name="currency" value="pln">PLN</option>
+                            <option se name="currency" value="eur">EUR</option>
+                            <option name="currency" value="usd">USD</option>
+                            <option name="currency" value="gbp">GBP</option>
+                            <option name="currency" value="chf">CHF</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__labelText">Kurs:</span>
+                        <input type="number" class="js-currencyRate form__input form__input--readonly" readonly>
+                    </label>
+                </p>
+
+                <p class="form__paragraph">
+                    <label>
+                        <span class="form__labelText">Kwota jaką otrzymasz:</span>
+                        <input type="number" class="js-amountRecived form__input form__input--readonly" readonly>
+                    </label>
+                </p>
+
+                <p class="form__paragraph form__paragraph--button">
+                    <button class="form__button">Przelicz</button>
+                </p>
+            </fieldset>
+        </form>
+        <footer class="footer">
+            <p class="footer__paragraph">*Wartości kursów walut aktualne na dzień 01.07.2020 r. według danych pochodzących ze strony Narodowego Banku Polskiego</p>
+        </footer>
+    </div>
+</body>
+
+</html>
