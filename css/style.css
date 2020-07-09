@@ -7,15 +7,17 @@ html {
 }
 
 .body {
-    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("../images/dollar-5360047_1920.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .header {
     text-align: center;
-    background-color: teal;
-    color: white;
+    color: teal;
     font-size: 40px;
-    margin: 0px 0px 30px 0px;
-    padding: 30px;
 }
-
