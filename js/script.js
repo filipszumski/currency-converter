@@ -64,12 +64,15 @@
         amountRecivedElement.value = result1.toFixed(2);
     }
 
+    const calculateCurrencyIndexValue = (amount, result1) => {
+        return amount / result1
+    }
+
     const displaycurrencyIndex = (amount, result1) => {
 
-        const CurrencyIndexElement = document.querySelector(".js-currencyRate");
+        const currencyIndexElement = document.querySelector(".js-currencyRate");
 
-        const currencyIndexValue = amount / result1;
-        CurrencyIndexElement.value = currencyIndexValue.toFixed(2);
+        currencyIndexElement.value = calculateCurrencyIndexValue(amount, result1).toFixed(2);
     }
 
     const onFormSubmit = (event, moneyAmountElement) => {
