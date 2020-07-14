@@ -3,8 +3,7 @@
         console.log("Hello World");
     }
 
-    const displayAmountInConsole = () => {
-        const moneyAmountElement = document.querySelector(".js-moneyAmount")
+    const displayAmountInConsole = (moneyAmountElement) => {
         console.log(`Aktualna kwota: ${moneyAmountElement.value}`);
     }
 
@@ -59,22 +58,23 @@
     }
 
     const displayResult = (result1) => {
+
         const amountRecivedElement = document.querySelector(".js-amountRecived");
 
-        amountRecivedElement.value = result1.toFixed(2)
+        amountRecivedElement.value = result1.toFixed(2);
     }
 
     const displaycurrencyIndex = (amount, result1) => {
-        const currencyRateElement = document.querySelector(".js-currencyRate")
 
-        const currencyIndex = amount / result1;
-        currencyRateElement.value = currencyIndex.toFixed(2)
+        const CurrencyIndexElement = document.querySelector(".js-currencyRate");
+
+        const currencyIndexValue = amount / result1;
+        CurrencyIndexElement.value = currencyIndexValue.toFixed(2);
     }
 
-    const onFormSubmit = (event) => {
+    const onFormSubmit = (event, moneyAmountElement) => {
         event.preventDefault();
 
-        const moneyAmountElement = document.querySelector(".js-moneyAmount")
         const possessedCurrencyElement = document.querySelector(".js-possessedCurrency");
         const wantedCurrencyElement = document.querySelector(".js-wantedCurrency")
 
@@ -92,14 +92,13 @@
     }
 
     const init = () => {
-        const moneyAmountElement = document.querySelector(".js-moneyAmount")
-        moneyAmountElement.addEventListener("input", displayAmountInConsole)
-
         welcome();
 
-        const formElement = document.querySelector(".js-form");
+        const moneyAmountElement = document.querySelector(".js-moneyAmount")
+        moneyAmountElement.addEventListener("input", () => displayAmountInConsole(moneyAmountElement))
 
-        formElement.addEventListener("submit", onFormSubmit)
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("submit", () => onFormSubmit(event, moneyAmountElement))
     }
     init();
 }
