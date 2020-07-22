@@ -17,6 +17,7 @@ Simple currency converter. It allows you to make caluculations between few curre
 - HTML
 - CSS
 - JavaScript
+- BEM
 
 ### HOW TO USE
 
