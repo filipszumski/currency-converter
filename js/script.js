@@ -75,9 +75,8 @@
 
     const init = () => {
         const moneyAmountElement = document.querySelector(".js-moneyAmount")
-        moneyAmountElement.addEventListener("input", () => displayAmountInConsole(moneyAmountElement))
-
         const formElement = document.querySelector(".js-form");
+        
         formElement.addEventListener("submit", () => onFormSubmit(event, moneyAmountElement))
     }
     init();
