@@ -22,7 +22,7 @@
             case "chf":
                 return amount * chfRate
         }
-    }
+    };
 
     const calculateWantedCurrencyAmount = (wantedCurrency, result) => {
         const plnRate = 1;
@@ -47,21 +47,20 @@
             case "chf":
                 return result / chfRate
         }
-    }
+    };
 
-    const displayResult = (result1) => {
+    const displayResult = (amount, possessedCurrency, wantedCurrency, result1) => {
+        const resultElement = document.querySelector(".js-result");
 
-        const result = document.querySelector(".js-result");
+        resultElement.innerHTML = `${amount} ${possessedCurrency} = <strong>${result1} ${wantedCurrency}</strong> `;
+    };
 
-        result.innerHTML = ``;
-    }
-
-    const onFormSubmit = (event, moneyAmountElement) => {
+    const onFormSubmit = (event) => {
         event.preventDefault();
 
+        const moneyAmountElement = document.querySelector(".js-moneyAmount")
         const possessedCurrencyElement = document.querySelector(".js-possessedCurrency");
         const wantedCurrencyElement = document.querySelector(".js-wantedCurrency")
-
 
         const amount = +moneyAmountElement.value;
         const possessedCurrency = possessedCurrencyElement.value;
@@ -70,14 +69,14 @@
         const result = calculatePossessedCurrencyAmount(possessedCurrency, amount);
         const result1 = calculateWantedCurrencyAmount(wantedCurrency, result)
 
-        displayResult(result1);
-    }
+        displayResult(amount, possessedCurrency, wantedCurrency, result1);
+    };
 
     const init = () => {
-        const moneyAmountElement = document.querySelector(".js-moneyAmount")
         const formElement = document.querySelector(".js-form");
-        
-        formElement.addEventListener("submit", () => onFormSubmit(event, moneyAmountElement))
-    }
+
+        formElement.addEventListener("submit", onFormSubmit);
+    };
+
     init();
 }
