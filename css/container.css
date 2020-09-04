@@ -1,0 +1,9 @@
+.container {
+    flex-basis: 700px;
+    font-size: 20px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 50px;
+    opacity: 0.85;
+    margin: 20px;
+}
