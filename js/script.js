@@ -52,7 +52,7 @@
     const displayResult = (amount, possessedCurrency, wantedCurrency, result1) => {
         const resultElement = document.querySelector(".js-result");
 
-        resultElement.innerHTML = `${amount} ${possessedCurrency} = <strong>${result1} ${wantedCurrency}</strong> `;
+        resultElement.innerHTML = `${amount.toFixed(2)} ${possessedCurrency.toUpperCase()} = <strong>${result1.toFixed(2)} ${wantedCurrency.toUpperCase()}</strong> `;
     };
 
     const onFormSubmit = (event) => {
