@@ -71,8 +71,6 @@
         const result1 = calculateWantedCurrencyAmount(wantedCurrency, result)
 
         displayResult(result1);
-        displaycurrencyIndex(amount, result1)
-
     }
 
     const init = () => {
