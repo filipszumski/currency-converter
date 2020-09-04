@@ -1,8 +1,4 @@
 {
-    const displayAmountInConsole = (moneyAmountElement) => {
-        console.log(`Aktualna kwota: ${moneyAmountElement.value}`);
-    }
-
     const calculatePossessedCurrencyAmount = (possessedCurrency, amount) => {
         const plnRate = 1;
         const eurRate = 4.4660;
@@ -55,9 +51,9 @@
 
     const displayResult = (result1) => {
 
-        const amountRecivedElement = document.querySelector(".js-amountRecived");
+        const result = document.querySelector(".js-result");
 
-        amountRecivedElement.value = result1.toFixed(2);
+        result.innerHTML = ``;
     }
 
     const onFormSubmit = (event, moneyAmountElement) => {
