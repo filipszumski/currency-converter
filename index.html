@@ -21,7 +21,7 @@
         <h1 class="header">Kantor Online</h1>
         <form class="form js-form" action="" method="GET">
             <p class="form__paragraph">
-                <label>
+                <label class="form__label">
                     <span class="form__labelText">Wymieniasz z (wybierz walutę):</span>
                     <select class="form__input js-possessedCurrency">
                         <option name="currency" value="pln">PLN</option>
@@ -34,7 +34,7 @@
             </p>
 
             <p class="form__paragraph">
-                <label>
+                <label class="form__label">
                     <span class="form__labelText">Kwota:</span>
                     <input type="number" name="amount" step="0.01" placeholder="Wpisz kwotę"
                         class="js-moneyAmount form__input" min="0">
@@ -42,7 +42,7 @@
             </p>
 
             <p class="form__paragraph">
-                <label>
+                <label class="form__label">
                     <span class="form__labelText">Wymieniasz na (wybierz walutę):</span>
                     <select class="form__input js-wantedCurrency">
                         <option name="currency" value="pln">PLN</option>
@@ -54,14 +54,14 @@
                 </label>
             </p>
 
-            <p class="form__paragraph form__paragraph--button">
+            <p class="form__paragraph">
                 <button class="form__button">Przelicz</button>
             </p>
-            <p class="form__info">
+            <p class="form__paragraph form__paragraph--info">
                 *Wartości kursów walut aktualne na dzień 01.07.2020 r. według danych
                 pochodzących ze strony Narodowego Banku Polskiego
             </p>
-            <p class="form__result js-result">
+            <p class="form__paragraph form__paragraph--result js-result">
             </p>
         </form>
     </div>
