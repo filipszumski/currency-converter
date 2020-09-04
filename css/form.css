@@ -47,3 +47,8 @@
 .form__input--readonly {
     background-color: #ccc;
 }
+
+.form__info {
+    color: rgb(107, 107, 107);
+    font-size: 14px;
+}

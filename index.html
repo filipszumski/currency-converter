@@ -19,61 +19,51 @@
     <main class="form__container">
         <h1 class="header">Kantor Online</h1>
         <form class="form js-form" action="" method="GET">
-                <p class="form__paragraph">
-                    <label>
-                        <span class="form__labelText">Wymieniasz z (wybierz walutę):</span>
-                        <select class="form__input js-possessedCurrency">
-                            <option name="currency" value="pln">PLN</option>
-                            <option name="currency" value="eur">EUR</option>
-                            <option name="currency" value="usd">USD</option>
-                            <option name="currency" value="gbp">GBP</option>
-                            <option name="currency" value="chf">CHF</option>
-                        </select>
-                    </label>
-                </p>
+            <p class="form__paragraph">
+                <label>
+                    <span class="form__labelText">Wymieniasz z (wybierz walutę):</span>
+                    <select class="form__input js-possessedCurrency">
+                        <option name="currency" value="pln">PLN</option>
+                        <option name="currency" value="eur">EUR</option>
+                        <option name="currency" value="usd">USD</option>
+                        <option name="currency" value="gbp">GBP</option>
+                        <option name="currency" value="chf">CHF</option>
+                    </select>
+                </label>
+            </p>
 
-                <p class="form__paragraph">
-                    <label>
-                        <span class="form__labelText">Kwota:</span>
-                        <input type="number" name="amount" step="0.01" placeholder="Wpisz kwotę"
-                            class="js-moneyAmount form__input" min="0">
-                    </label>
-                </p>
+            <p class="form__paragraph">
+                <label>
+                    <span class="form__labelText">Kwota:</span>
+                    <input type="number" name="amount" step="0.01" placeholder="Wpisz kwotę"
+                        class="js-moneyAmount form__input" min="0">
+                </label>
+            </p>
 
-                <p class="form__paragraph">
-                    <label>
-                        <span class="form__labelText">Wymieniasz na (wybierz walutę):</span>
-                        <select class="form__input js-wantedCurrency">
-                            <option name="currency" value="pln">PLN</option>
-                            <option se name="currency" value="eur">EUR</option>
-                            <option name="currency" value="usd">USD</option>
-                            <option name="currency" value="gbp">GBP</option>
-                            <option name="currency" value="chf">CHF</option>
-                        </select>
-                    </label>
-                </p>
+            <p class="form__paragraph">
+                <label>
+                    <span class="form__labelText">Wymieniasz na (wybierz walutę):</span>
+                    <select class="form__input js-wantedCurrency">
+                        <option name="currency" value="pln">PLN</option>
+                        <option se name="currency" value="eur">EUR</option>
+                        <option name="currency" value="usd">USD</option>
+                        <option name="currency" value="gbp">GBP</option>
+                        <option name="currency" value="chf">CHF</option>
+                    </select>
+                </label>
+            </p>
 
-                <p class="form__paragraph">
-                    <label>
-                        <span class="form__labelText">Kurs:</span>
-                        <input type="number" class="js-currencyRate form__input form__input--readonly" readonly>
-                    </label>
-                </p>
+            <p class="form__paragraph form__paragraph--button">
+                <button class="form__button">Przelicz</button>
+            </p>
+            <p class="form__info">
+                *Wartości kursów walut aktualne na dzień 01.07.2020 r. według danych
+                pochodzących ze strony Narodowego Banku Polskiego
+            </p>
+            <p class="form__result js-result">
+            </p>
 
-                <p class="form__paragraph">
-                    <label>
-                        <span class="form__labelText">Kwota jaką otrzymasz:</span>
-                        <input type="number" class="js-amountRecived form__input form__input--readonly" readonly>
-                    </label>
-                </p>
-
-                <p class="form__paragraph form__paragraph--button">
-                    <button class="form__button">Przelicz</button>
-                </p>
         </form>
-        <footer class="footer">
-            <p class="footer__paragraph">*Wartości kursów walut aktualne na dzień 01.07.2020 r. według danych pochodzących ze strony Narodowego Banku Polskiego</p>
-        </footer>
     </main>
 </body>
 
