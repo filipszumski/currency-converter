@@ -91,8 +91,6 @@
     }
 
     const init = () => {
-        welcome();
-
         const moneyAmountElement = document.querySelector(".js-moneyAmount")
         moneyAmountElement.addEventListener("input", () => displayAmountInConsole(moneyAmountElement))
 
