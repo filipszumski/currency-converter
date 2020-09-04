@@ -60,17 +60,6 @@
         amountRecivedElement.value = result1.toFixed(2);
     }
 
-    const calculateCurrencyIndexValue = (amount, result1) => {
-        return amount / result1
-    }
-
-    const displaycurrencyIndex = (amount, result1) => {
-
-        const currencyIndexElement = document.querySelector(".js-currencyRate");
-
-        currencyIndexElement.value = calculateCurrencyIndexValue(amount, result1).toFixed(2);
-    }
-
     const onFormSubmit = (event, moneyAmountElement) => {
         event.preventDefault();
 
