@@ -1,8 +1,4 @@
 {
-    const welcome = () => {
-        console.log("Hello World");
-    }
-
     const displayAmountInConsole = (moneyAmountElement) => {
         console.log(`Aktualna kwota: ${moneyAmountElement.value}`);
     }
