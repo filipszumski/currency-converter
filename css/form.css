@@ -59,7 +59,9 @@
 }
 
 .form__paragraph--result {
-    justify-self: center;
-    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 28px;
     color: teal;
 }
