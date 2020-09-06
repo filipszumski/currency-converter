@@ -7,7 +7,7 @@
 Simple currency converter. It allows you to make caluculations between few currencies. Exchange rate are currently static, based on rates of the day from Polish National Bank website. Supported currencies:
 
 - PLN - Polish Zloty
-- EUR - Polish Zloty
+- EUR - Euro
 - USD - US Dollar
 - GBP - British Pound
 - CHF - Swiss Franc
