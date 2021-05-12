@@ -4,7 +4,7 @@
 
 ## DESCRIPTION
 
-Simple currency converter. It allows you to make caluculations between few currencies. Exchange rate are static, based on rates of the day from Polish National Bank website. Supported currencies:
+Simple currency converter. It allows you to make calculations between few currencies. Exchange rate are static, based on rates of the day from Polish National Bank website. Supported currencies:
 
 - PLN - Polish Zloty
 - EUR - Euro
