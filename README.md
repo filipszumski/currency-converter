@@ -21,7 +21,7 @@ Simple currency converter. It allows you to make calculations between few curren
 
 ### FEATURES
 
-- Calculating currency conversion and displaying result.
+- Calculating currency conversion and displaying result
 
 ## My other projects
 
