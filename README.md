@@ -25,10 +25,11 @@ Simple currency converter. It allows you to make calculations between few curren
 
 ## My other projects
 
-- [Tasks List](https://filipszumski.github.io/tasks-list/)
-- [Tasks List React](https://filipszumski.github.io/tasks-list-react/)
-- [Currency Converter And Data](https://filipszumski.github.io/currency-converter-and-data-react/)
-- [Crowdfunding Product Page](https://filipszumski.github.io/crowdfunding-product-page/)
-- [REST Countries API With Theme Switcher](https://filipszumski.github.io/rest-countries-api-with-color-theme-switcher/)
+- [Tasks List](https://github.com/filipszumski/tasks-list)
+- [Tasks List React](https://github.com/filipszumski/tasks-list-react)
+- [Currency Converter And Data](https://github.com/filipszumski/currency-converter-and-data-react)
+- [Crowdfunding Product Page](https://github.com/filipszumski/crowdfunding-product-page)
+- [REST Countries API With Theme Switcher](https://github.com/filipszumski/rest-countries-api-with-color-theme-switcher)
+- [Invoice App](https://github.com/filipszumski/invoice-app)
 
 
